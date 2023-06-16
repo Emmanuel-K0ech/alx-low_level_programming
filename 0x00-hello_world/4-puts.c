@@ -3,7 +3,7 @@
  * main - Entry point of the program
  *
  * Description : The program prints the contents of a char array using puts()
- * 		 function
+ *
  *
  * Return: 0 on a successful execution
  */
