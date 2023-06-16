@@ -1,0 +1,16 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: prints a string using printf()
+ *
+ * Return: Always 0 (success)
+ */
+int main(void)
+{
+	char string[] = "with proper grammar, but the outcome is a piece of art,\n";
+
+	printf("%s", string);
+
+	return (0);
+}
