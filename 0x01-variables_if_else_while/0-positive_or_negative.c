@@ -8,6 +8,7 @@
  *
  * Return value: returns 0 on successful execution
  */
+/* return 0 ons success, use of if..else */
 int main(void)
 {
 	int n;
