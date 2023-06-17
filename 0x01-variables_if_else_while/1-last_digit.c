@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include <string.h>
 /**
  * main - entry point
  *
@@ -16,12 +17,15 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	char str[];
 
-	sprintf(str, "%d", n);
+	char string[];
+	char lastdigit;
+	int length;
 
-	int length = strlen(str);
-	char lastdigit = str[length - 1];
+	sprintf(string, "%d", n);
+
+	length = strlen(string);
+	lastdigit = string[length - 1];
 
 	if (lastdigit > 5)
 	{
