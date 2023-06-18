@@ -7,37 +7,34 @@
  *
  * Description: if else statements
  *
- * Return value: 0 on success
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	/* multiple if else statments */
 	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-	/* your code goes there */
-
-	char string[];
+	char word[20];
 	char lastdigit;
 	int length;
 
-	sprintf(string, "%d", n);
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-	length = strlen(string);
-	lastdigit = string[length - 1];
+	sprintf(word, "%d", n);
+
+	length = strlen(word);
+	lastdigit = word[length - 1];
 
 	if (lastdigit > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5", n, lastdigit);
+		printf("Last digit of %d is %d and is greater than 5\n", n, lastdigit);
 	}
 	else if (lastdigit == 0)
 	{
-		printf("Last digit of %d is %d and is 0", n, lastdigit);
+		printf("Last digit of %d is %d and is 0\n", n, lastdigit);
 	}
 	else if (lastdigit < 6 && lastdigit != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0", n, lastdigit);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, lastdigit);
 	}
 
 
