@@ -6,9 +6,8 @@
  *
  * Description: uses if..else to classify -ve, +ve and zero
  *
- * Return value: returns 0 on successful execution
+ * Return: Always 0 (Success)
  */
-/* return 0 ons success, use of if..else */
 int main(void)
 {
 	int n;
