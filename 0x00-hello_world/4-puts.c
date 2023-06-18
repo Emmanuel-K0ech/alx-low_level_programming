@@ -9,12 +9,10 @@
  */
 int main(void)
 {
-	/*This program prints the contents of a string using puts()*/
 
 	char string[] = "\"Programming is like building a multilingual puzzle";
 
 	puts(string);
-	putchar('\n');
 
 	return (0);
 }
