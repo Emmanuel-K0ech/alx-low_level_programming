@@ -1,16 +1,4 @@
-#include "main.h"
-/**
- * main - Entry point
- *
- * Description: prints a to z using for loop
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
+#include "main"
 /**
  * print_alphabet - prints a to z in lowercaser
  *
