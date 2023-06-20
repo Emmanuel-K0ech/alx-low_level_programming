@@ -1,10 +1,8 @@
-#include <stdio.h>
 #include "main.h"
-void print_alphabet(void);
 /**
  * main - Entry point
  *
- * Description: prints the alphabet(in lower case) using a function
+ * Description: prints a to z using for loop
  *
  * Return: Always 0 (Success)
  */
@@ -14,16 +12,16 @@ int main(void)
 	return (0);
 }
 /**
- * print_alphabet - prints a to z
+ * print_alphabet - prints a to z in lowercaser
  *
  */
 void print_alphabet(void)
 {
-	int a;
+	char a;
 
 	for (a = 'a'; a < 'z'; a++)
 	{
-		putchar(a);
+		_putchar(a);
 	}
-	putchar('\n');
+	_putchar('\n');
 }
