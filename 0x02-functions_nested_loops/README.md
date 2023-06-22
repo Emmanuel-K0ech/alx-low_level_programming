@@ -5,3 +5,5 @@
 4-isalpha.c: checks for characters
 5-sign.c: prints the sign of a number
 6-abs.c: making a number absolute
+7-print_last_digit.c: prints the last digit of a number
+8-24_hours.c: print all the minutes of the day in 24hr format
