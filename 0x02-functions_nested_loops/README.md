@@ -7,3 +7,4 @@
 6-abs.c: making a number absolute
 7-print_last_digit.c: prints the last digit of a number
 8-24_hours.c: print all the minutes of the day in 24hr format
+9-times_table.c: prints the times table from 0 to 9
