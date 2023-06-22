@@ -6,8 +6,7 @@
  */
 void print_line(int n)
 {
-	do 
-	{
+	do {
 		if (n <= 0)
 		{
 			_putchar('\n');
@@ -15,8 +14,8 @@ void print_line(int n)
 		else
 		{
 		_putchar('_');
+		_putchar('\n');
 		}
 		n--;
-	}
-	while (n > 0);
+	} while (n > 0);
 }
