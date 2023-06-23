@@ -6,3 +6,4 @@
 5-more_numbers.c: print 0 to 14
 6-print_line.c: prints an underscore a number of specified times
 7-print_diagonal.c: print diagonal line on the screen a number of times sspecified by argument
+8-print_square.c: prints a square of n by n measurements where n = size specified by input
