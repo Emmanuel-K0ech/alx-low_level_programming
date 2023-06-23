@@ -13,9 +13,9 @@ int main(void)
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 == 0)
 		{
-			printf("Fizz");
+			printf("FizzBuzz");
 			putchar(' ');
 		}
 		else if (i % 5 == 0)
@@ -23,9 +23,9 @@ int main(void)
 			printf("Buzz");
 			putchar(' ');
 		}
-		else if (i % 3 == 0 && i % 5 == 0)
+		else if (i % 3 == 0)
 		{
-			printf("FizzBuzz");
+			printf("Fizz");
 			putchar(' ');
 		}
 		else
