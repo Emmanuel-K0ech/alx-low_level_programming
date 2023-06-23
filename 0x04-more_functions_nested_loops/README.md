@@ -7,3 +7,5 @@
 6-print_line.c: prints an underscore a number of specified times
 7-print_diagonal.c: print diagonal line on the screen a number of times sspecified by argument
 8-print_square.c: prints a square of n by n measurements where n = size specified by input
+9-fizz_buzz.c: in a range of 1 to 100, prints multiples of 3 , 5 and those multiples of both 3 and 5
+prints fizz for multiples of 3, buzz for multiples of 5 and fizzbuzz for numbers that are multiples of both 3 and 5 
