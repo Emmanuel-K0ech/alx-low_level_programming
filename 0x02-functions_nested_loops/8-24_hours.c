@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
  * jack_bauer - prints all the minutes of the day in 24hr format
@@ -11,10 +12,7 @@ void jack_bauer(void)
 	{
 		for (minute = 0; minute < 60; minute++)
 		{
-			_putchar(hour + '0');
-			_putchar(':');
-			_putchar(minute + '0');
-			_putchar('\n');
+			printf("%02d:%02d\n", hour, minute);
 		}
 	}
 }
