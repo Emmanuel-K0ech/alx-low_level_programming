@@ -2,3 +2,4 @@
 1-swap.c: swaps the values of two variable whose addresses are in pointervariables
 2-strlen.c: returns the length of a string.
 3-puts.c: prints a string to stdout
+4-print_rev.c: prints string in reverse
