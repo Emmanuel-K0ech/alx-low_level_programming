@@ -4,10 +4,14 @@
  * @dest: pointer to the string to append to
  * @src: pointer to the string to append
  *
- * Return: dest (concateneated string)
+ * Return: result (pointer to dest)
  */
 char *_strcat(char *dest, char *src)
 {
+	/* initializing *result to keep track of array address */
+	char *result;
+
+	result = dest;
 	/* moving to the end of the destination string */
 	while (*dest != '\0')
 	{
@@ -25,5 +29,5 @@ char *_strcat(char *dest, char *src)
 	/* add a null byte at the end of concatenated string */
 	*dest = '\0';
 
-	return (dest);
+	return (result);
 }
