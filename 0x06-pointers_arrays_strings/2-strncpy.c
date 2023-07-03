@@ -47,8 +47,8 @@ char *_strncpy(char *dest, char *src, int n)
 			dest++;
 			flag++;
 		}
+		*dest = '\0';
 
 	}
-	*dest = '\0';
 	return (result);
 }
