@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * _strpbrk - searches a string for any of a set of bytes
+ * _strpbrk - searches a string to find the first occurrence of charcters
+ * matching the any character in the accepts string
  * @s: points to string to be searched
  * @accept: charactert to check if present in @s
  *
@@ -14,8 +15,8 @@ char *_strpbrk(char *s, char *accept)
 	{
 		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[i] == accept[i])
-				return ((s + i) - 1);
+			if (s[i] == accept[j])
+				return (s + i);
 		}
 	}
 	return ('\0');
