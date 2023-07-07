@@ -1,9 +1,18 @@
 #include <stdio.h>
+#define UNUSED(x) (void)(x)
 /**
- *_myname - prints the name of the program
+ * main - Entry point
+ * @argc: argument count/number of arguments passed in terminal
+ * @argv: argument vector/ string of the arguments passed in terminal
  *
+ * Description: prints the name of the program
+ *
+ * Return: Always 0 (Success)
  */
-void _myname(void)
+int main(int argc, char *argv[])
 {
+	UNUSED(argc);
+
 	printf("%s\n", argv[0]);
+	return (0);
 }
