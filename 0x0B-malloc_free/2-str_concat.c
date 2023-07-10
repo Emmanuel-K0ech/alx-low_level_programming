@@ -14,21 +14,26 @@ char *str_concat(char *s1, char *s2)
 	char *result;
 	int len = 0;
 
-	if (s2 == NULL)
-		return (s1);
-	if (s1 == NULL)
-		return (s2);
-
 	len = strlen(s1);
 	len += strlen(s2);
 	ptr = malloc((sizeof(char) * len) + 1);
 	result = ptr;
-
-	if (ptr == NULL)
+	if (s2 == NULL)
+	{
+		ptr = s1;
+	}
+	else if (s1 == NULL)
+	{
+		ptr = s2;
+	}
+	else if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	strcat(ptr, s1);
-	strcat(ptr, s2);
+	else
+	{
+		strcat(ptr, s1);
+		strcat(ptr, s2);
+	}
 	return (result);
 }
