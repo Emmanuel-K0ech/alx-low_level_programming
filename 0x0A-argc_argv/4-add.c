@@ -16,8 +16,10 @@ int main(int argc, char *argv[])
 	int sum = 0;
 
 	if (argc <= 1)
+	{
 		return (0);
-		_putchar('\n');
+		putchar('\n');
+	}
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; j < argv[i][j]; j++)
