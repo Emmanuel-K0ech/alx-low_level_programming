@@ -17,20 +17,23 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL && s2 == NULL)
 	{
 		ptr = malloc(sizeof(char));
+		result = ptr;
 		ptr[0] = '\0';
-		return (ptr);
+		return (result);
 	}
 	if (s2 == NULL)
 	{
 		ptr = malloc(sizeof(char) * (strlen(s1)));
+		result = ptr;
 		ptr = s1;
-		return (ptr);
+		return (result);
 	}
 	if (s1 == NULL)
 	{
 		ptr = malloc(sizeof(char) * (strlen(s2)));
+		result = ptr;
 		ptr = s2;
-		return (ptr);
+		return (result);
 	}
 
 	len = strlen(s1);
