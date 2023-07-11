@@ -3,4 +3,5 @@
 3. 2-str_conca.c: concatenates two strings
 4. 3-alloc_grid.c: returns a pointer to a 2 dimensional array of int
 5. 4-free_grid.c: frees a 2 dimensional grid previously created by alloc_grid()
-
+6. 100-argstostr.c: concatenates all the arguments of you program
+7. 101-strtow.c: splits a string into one word per line
