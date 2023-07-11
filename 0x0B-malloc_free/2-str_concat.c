@@ -14,10 +14,21 @@ char *str_concat(char *s1, char *s2)
 	char *result;
 	int len = 0;
 
+	if (s1 == NULL && s2 == NULL)
+	{
+		ptr = " ";
+		return (ptr);
+	}
 	if (s2 == NULL)
+	{
 		ptr = s1;
+		return (ptr);
+	}
 	if (s1 == NULL)
+	{
 		ptr = s2;
+		return (ptr);
+	}
 
 	len = strlen(s1);
 	len += strlen(s2);
