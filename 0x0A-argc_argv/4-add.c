@@ -15,9 +15,9 @@ int main(int argc, char *argv[])
 	int i, j;
 	int sum = 0;
 
-	if (argc <= 1)
+	if (argc == 1)
 	{
-		putchar('0\n');
+		putchar('0');
 		putchar('\n');
 	}
 	for (i = 1; i < argc; i++)
