@@ -17,8 +17,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		putchar('0');
-		putchar('\n');
+		printf("%d\n", sum);
 	}
 	for (i = 1; i < argc; i++)
 	{
