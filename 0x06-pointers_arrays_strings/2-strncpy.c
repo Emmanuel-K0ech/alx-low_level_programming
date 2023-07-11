@@ -12,43 +12,14 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	char *result;
-	int len_src;
-	int flag;
+	int i = 0;
 
-	/* finding length of string to compare with n */
-	len_src = strlen(src);
-	flag = 0;
 	result = dest;
 
-	/* seperate n < strlen(src) and n > strlen(src) scenarios */
-	if (n > len_src)
+	for (i = 0; i < n; i++)
 	{
-		while (*src != '\0')
-		{
-			*dest = *src;
-			src++;
-			dest++;
-			flag++;
-		}
-
-		while (flag < n)
-		{
-			*dest = '\0';
-			dest++;
-			flag++;
-		}
-	}
-	else
-	{
-		while (flag < n)
-		{
-			*dest = *src;
-			src++;
-			dest++;
-			flag++;
-		}
-		*dest = '\0';
-
+		dest[i] = src[i];
 	}
 	return (result);
 }
+
