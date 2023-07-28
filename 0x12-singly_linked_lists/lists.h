@@ -1,6 +1,7 @@
 #ifndef _LISTS_H_
 #define _LISTS_H_
 
+#include <stddef.h>
 /**
  * struct node - structure with two members
  * @str: member 1 of type string
