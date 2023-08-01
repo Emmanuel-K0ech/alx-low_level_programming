@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * sqroot - find natural sqrt of a number
- * @n: integer
+ * @i: integer
+ * @j: integer
  *
  * Return: integer
  */
@@ -23,6 +24,6 @@ int sqroot(int i, int j)
 int _sqrt_recursion(int n)
 {
 	int i = 1;
-	
+
 	return (sqroot(i, n));
 }
