@@ -11,6 +11,8 @@ int set_bit(unsigned long int *n, unsigned int index)
 	int bit_mask = 1 << index;
 	int result = 0;
 
+	if (index > 63)
+		return (-1);
 	result = (*n | bit_mask);
 	*n = result;
 	return (1);
