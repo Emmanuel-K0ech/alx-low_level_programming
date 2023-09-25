@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 /**
  * read_textfile - reads a text file and prints it to stdout
  * @filename: file to read from
@@ -15,6 +16,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t rd_count, wr_count = 0;
 	char *buffer;
 
+	if (letters > SSIZE_MAX)
+		return (0);
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
