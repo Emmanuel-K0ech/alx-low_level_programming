@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
+#include <stdio.h>
 /**
  * read_textfile - reads a text file and prints it to stdout
  * @filename: file to read from
@@ -36,7 +37,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(fd);
 		return (0);
 	}
-	wr_count = write(STDOUT_FILENO, buffer, letters);
+	wr_count = write(STDOUT_FILENO, buffer, rd_count);
 	if (wr_count == -1)
 	{
 		free(buffer);
