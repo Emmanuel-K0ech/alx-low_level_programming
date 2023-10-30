@@ -98,8 +98,7 @@ int main(int argc, char *argv[])
 		close_err(file_from);
 		return (99);
 	}
-	do
-	{
+	do {
 		lenr = read(file_from, buf, 1024);
 		if (lenr == -1)
 			return (read_err(file_from, file_to, argv[1]));
