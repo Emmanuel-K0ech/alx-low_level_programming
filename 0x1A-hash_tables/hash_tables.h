@@ -33,6 +33,7 @@ typedef struct hash_table_s
 /* System Libraries */
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /* User defined functions */
 hash_table_t *hash_table_create(unsigned long int size);
