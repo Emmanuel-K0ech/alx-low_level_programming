@@ -15,7 +15,7 @@ def island_perimeter(grid):
     edge = 0
     size = 0
 
-    for i in rage(height):
+    for i in range(height):
         for j in range(width):
             if grid[i][j] == 1:
                 size += 1
